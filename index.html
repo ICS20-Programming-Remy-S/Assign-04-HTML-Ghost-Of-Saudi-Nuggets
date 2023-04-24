@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--- Meta Data --->
+    <meta charset="utf-8" />
+    <meta name="description" content="Ghost of Saudi nuggets, with JavaScript" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Remy Skelton" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--- Favicon --->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ghost of saudi Guggets , with JavaScript</title>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Ghost of Saudi Nuggets</span>
+        </div>
+      </header>
+              <h2>Ghost of Saudi Nuggets</h2>
+              <h5>Please Enter your Order in our Online Menu</h5>
+    <!--- Script --->
+    <script src="./js/script.js"></script>
+    <!--- User Age --->
+      <form action="javascript:enterClicked()">
+        <label for="userNuggets">Nugget options:</label>
+        <select name="Nugget options" id="user-nuggets">
+  <option value="6pcs nugget">6pcs nugget($5.99)</option>
+  <option value="10pcs nugget">10pcs nugget($7.49)</option>
+  <option value="20pcs nugget">20pcs nugget($11.99)</option>
+</select>
+        <label for="userAmount">Please enter the amount of nuggets :</label>
+        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        
+        <label for="userDrink">Fountain options:</label>
+        <select name="Drink options" id="user-drink">
+  <option value="Small Drink">Small Drink($1.50)</option>
+  <option value="Medium Drink">Medium Drink($2.25)</option>
+  <option value="Large Drink">Large Drink($3)</option>
+</select>
+        <label for="userAmount">Please enter the amount of Drinks :</label>
+        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        
+        <label for="userNuggets">Nugget options:</label>
+        <select name="Nugget options" id="user-nuggets">
+  <option value="6pcs nugget">6pcs nugget($5.99)</option>
+  <option value="10pcs nugget">10pcs nugget($7.49)</option>
+  <option value="20pcs nugget">20pcs nugget($11.99)</option>
+</select>
+        <label for="userDrinks">Please enter the amount of nuggets :</label>
+        <input type="number" id="user-drinks" placeholder="ex.3" step="1" min="0"><br><br>
+
+        <label for="userFries">Nugget options:</label>
+        <select name="Nugget options" id="user-nuggets">
+  <option value="6pcs nugget">6pcs nugget($5.99)</option>
+  <option value="10pcs nugget">10pcs nugget($7.49)</option>
+  <option value="20pcs nugget">20pcs nugget($11.99)</option>
+</select>
+        <label for="userAmount">Please enter the amount of nuggets :</label>
+        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        
+        <input type="submit" value="Get Results">
+      </form>
+    </p>
+     <!-- Create a space where the user movie age limit will be displayed -->
+    <div id="result"></div>
+    <center>
+    <img src="./images/movie.jpg" width="250" height="300" alt="Movies">
+    </center>
+  </body>
+</html>
