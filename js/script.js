@@ -15,7 +15,7 @@ function enterClicked () {
   let userSide2 = parseFloat(document.getElementById("user-side-2").value)
   let userSauce = parseFloat(document.getElementById("user-sauce").value)
   //Get the input for the type of main, side and sauce from dropdown 
-  
+  let
 
   //Use calculation 
   let subTotal = (chickenPrice * chickenAmount) + (drinkPrice * drinkAmount) + (friesPrice * friesAmount) + (saucePrice * sauceAmount)
