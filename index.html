@@ -18,17 +18,27 @@
     <title>Ghost of saudi Guggets , with JavaScript</title>
   </head>
   <body>
+    <!--- Header for page MDL --->
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Ghost of Saudi Nuggets</span>
+          <span class="mdl-layout-title">Ghost of Saudi nuggets</span>
         </div>
+        <!-- Simple MDL Progress Bar -->
+<div id="p1" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(80);
+  });
+</script>
       </header>
               <h2>Ghost of Saudi Nuggets</h2>
               <h5>Please Enter your Order in our Online Menu</h5>
     <!--- Script --->
     <script src="./js/script.js"></script>
-    <!--- User Age --->
+    <!--- Get the order that the user wants --->
       <form action="javascript:enterClicked()">
         <label for="userNuggets">Nugget options:</label>
         <select name="Nugget options" id="user-nuggets">
@@ -36,43 +46,45 @@
   <option value="10pcs nugget">10pcs nugget($7.49)</option>
   <option value="20pcs nugget">20pcs nugget($11.99)</option>
 </select>
-        <label for="userAmount">Please enter the amount of nuggets :</label>
-        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        <label for="usersMain">Please enter the amount of nuggets :</label>
+        <input type="number" id="users-main" placeholder="ex.4" step="1" min="0"><br><br>
         
         <label for="userDrink">Fountain options:</label>
         <select name="Drink options" id="user-drink">
   <option value="Small Drink">Small Drink($1.50)</option>
   <option value="Medium Drink">Medium Drink($2.25)</option>
-  <option value="Large Drink">Large Drink($3)</option>
+  <option value="Large Drink">Large Drink($3.00)</option>
 </select>
-        <label for="userAmount">Please enter the amount of Drinks :</label>
-        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        <label for="userSide1">Please enter the amount of drinks :</label>
+        <input type="number" id="user-Side-1" placeholder="ex.6" step="1" min="0"><br><br>
         
-        <label for="userNuggets">Nugget options:</label>
-        <select name="Nugget options" id="user-nuggets">
-  <option value="6pcs nugget">6pcs nugget($5.99)</option>
-  <option value="10pcs nugget">10pcs nugget($7.49)</option>
-  <option value="20pcs nugget">20pcs nugget($11.99)</option>
+        <label for="userFries">Fries options:</label>
+        <select name="fries options" id="user-fries">
+  <option value="small fries">Small fries($1.25)</option>
+  <option value="medium fries">Medium fries($2.00)</option>
+  <option value="large fries">Large fries($2.50)</option>
 </select>
-        <label for="userDrinks">Please enter the amount of nuggets :</label>
-        <input type="number" id="user-drinks" placeholder="ex.3" step="1" min="0"><br><br>
+        <label for="userSide2">Please enter the amount of fries :</label>
+        <input type="number" id="user-side-2" placeholder="ex.2" step="1" min="0"><br><br>
 
-        <label for="userFries">Nugget options:</label>
-        <select name="Nugget options" id="user-nuggets">
-  <option value="6pcs nugget">6pcs nugget($5.99)</option>
-  <option value="10pcs nugget">10pcs nugget($7.49)</option>
-  <option value="20pcs nugget">20pcs nugget($11.99)</option>
+        <label for="userSauce">Sauce options:</label>
+        <select name="Sauce options" id="user-sauce">
+  <option value="BBQ">BBQ($0.10)</option>
+  <option value="Ranch">Ranch($0.12</option>
+  <option value="Honey">Honey($0.15)</option>
 </select>
-        <label for="userAmount">Please enter the amount of nuggets :</label>
-        <input type="number" id="user-amount" placeholder="ex.4" step="1" min="0"><br><br>
+        <label for="userSauce">Please enter the amount of Sauce :</label>
+        <input type="number" id="user-sauce" placeholder="ex.6" step="1" min="0"><br><br>
         
-        <input type="submit" value="Get Results">
-      </form>
-    </p>
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Submit
+</button>
      <!-- Create a space where the user movie age limit will be displayed -->
     <div id="result"></div>
     <center>
-    <img src="./images/movie.jpg" width="250" height="300" alt="Movies">
+    <img src="./images/GhostOfSaudi.jpeg" width="400" height="300" alt="Ronaldo">
     </center>
+      <h5>The Ghost of Saudi has been thriving since the arrival of Ronaldo(the Ghost of Saudi) and the world cup. However, we understand why we have been able to thrive in this period of time not just because the ghost of saudi has come home it is also because of the chicken nugget which have a great significance to those who eat it. Dispite, the fact that so many people come here regularly we make sure each time you get great food matched with amazing service.</h5>
   </body>
 </html>

@@ -6,31 +6,24 @@
 "use strict"
 
 function enterClicked () {
-  // create a variable for the movie age limit if statment text
-  let result = "";
-
-  // Use age user has entered for results
-  let userAge = parseInt(document.getElementById("user-age").value);
+  //Declare the value for tax and discount
+  const TAX_RATE = 1.15;
+  const DISCOUNT = 0.05;
+  //Get the user input for amount of main, sides and sauce
+  let userMain = parseFloat(document.getElementById("user-main").value)
+  let userSide1 = parseFloat(document.getElementById("user-side-1").value)
+  let userSide2 = parseFloat(document.getElementById("user-side-2").value)
+  let userSauce = parseFloat(document.getElementById("user-sauce").value)
+  //Get the input for the type of main, side and sauce from dropdown 
   
-  // Display if the user can see R movies
-  if (userAge >= 18) {
-    result = "The Tempeture you can go see R rated movies by yourself."
-  }
-  //Display if the user can go see pg-13 movies
-  else if ( userAge >= 13){
-    result = "You can go see pg-13 movies by yourself."
-  }
-   //Display if the user can go see pg movies
-  else if ( userAge >= 5){
-    result = "You can go see pg movies by yourself."
-  }
-    //Display if the user can't go to movies
-  else if ( userAge >= 0){
-    result = "You can't go to movies by yourself"
-  }
-    //Display if user did not entre valid age
-  else
-    result = "Please Entre valid age"
-  // Display Results back to User
-  document.getElementById('result').innerHTML = result
+
+  //Use calculation 
+  let subTotal = (chickenPrice * chickenAmount) + (drinkPrice * drinkAmount) + (friesPrice * friesAmount) + (saucePrice * sauceAmount)
+  let total = subTotal * TAX_RATE
+  let discountTotal = total * (total * DISCOUNT)
+  
+  //Display information back to user 
+  document.getElementById('userMoneySpent').innerHTML = 'The amount of money this wil cost you is' + subTotal.toFixed(2)
+  document.getElementById('moneyTaxed').innerHTML = 'The amount of money this will cost you in total is $ ' + total.toFixed(2)
+  document.getElementById('discountedMoney').innerHTML = 'The amount of money this will cost you with the discount is $ ' + discountTotal.toFixed(2)
 }
