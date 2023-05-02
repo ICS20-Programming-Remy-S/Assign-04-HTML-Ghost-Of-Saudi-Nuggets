@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_orange.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Ghost of saudi Guggets , with JavaScript</title>
+    <title>Ghost of Saudi Nuggets , with JavaScript</title>
   </head>
   <body>
     <!--- Header for page MDL --->
@@ -26,6 +26,7 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Ghost of Saudi nuggets</span>
         </div>
+        
         <!-- Simple MDL Progress Bar -->
 <div id="p1" class="mdl-progress mdl-js-progress"></div>
 <script>
@@ -47,16 +48,16 @@
   <option value="20pcs nugget">20pcs nugget($11.99)</option>
 </select>
         <label for="usersMain">Please enter the amount of nuggets :</label>
-        <input type="number" id="users-main" placeholder="ex.4" step="1" min="0"><br><br>
+        <input type="number" id="user-main" placeholder="ex.4" step="1" min="1"><br><br>
         
-        <label for="userDrink">Fountain options:</label>
+        <label for="userDrink">Drink options:</label>
         <select name="Drink options" id="user-drink">
   <option value="Small Drink">Small Drink($1.50)</option>
   <option value="Medium Drink">Medium Drink($2.25)</option>
   <option value="Large Drink">Large Drink($3.00)</option>
 </select>
         <label for="userSide1">Please enter the amount of drinks :</label>
-        <input type="number" id="user-Side-1" placeholder="ex.6" step="1" min="0"><br><br>
+        <input type="number" id="user-side-1" placeholder="ex.6" step="1" min="0"><br><br>
         
         <label for="userFries">Fries options:</label>
         <select name="fries options" id="user-fries">
@@ -70,21 +71,30 @@
         <label for="userSauce">Sauce options:</label>
         <select name="Sauce options" id="user-sauce">
   <option value="BBQ">BBQ($0.10)</option>
-  <option value="Ranch">Ranch($0.12</option>
-  <option value="Honey">Honey($0.15)</option>
+  <option value="Ranch">Ranch($0.10)</option>
+  <option value="Honey">Honey($0.10)</option>
 </select>
-        <label for="userSauce">Please enter the amount of Sauce :</label>
-        <input type="number" id="user-sauce" placeholder="ex.6" step="1" min="0"><br><br>
+        <label for="sauceAmount">Please enter the amount of Sauce :</label>
+        <input type="number" id="sauce-amount" placeholder="ex.6" step="1" min="0"><br><br>
         
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  Submit
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick ="enterClicked()">
+  Submit Order
 </button>
+    </form>
      <!-- Create a space where the user movie age limit will be displayed -->
-    <div id="result"></div>
+        <br>
+    <div id="userMoneySpent"></div>
+    <div id="moneyTaxed"></div>
+    <div id="discountedMoney">
+    </div>
+    
+        <br>
     <center>
-    <img src="./images/GhostOfSaudi.jpeg" width="400" height="300" alt="Ronaldo">
+      <!---Image of the ghost of saudi--->
+    <img src="./images/GhostOfSaudi.jpg" width="400" height="300" alt="Ghost Of Saudi">
     </center>
-      <h5>The Ghost of Saudi has been thriving since the arrival of Ronaldo(the Ghost of Saudi) and the world cup. However, we understand why we have been able to thrive in this period of time not just because the ghost of saudi has come home it is also because of the chicken nugget which have a great significance to those who eat it. Dispite, the fact that so many people come here regularly we make sure each time you get great food matched with amazing service.</h5>
+        <!---Text about the ghost of saudi nuggets--->
+        
+      <h5>The Ghost of Saudi has been thriving since the world cup which has brought many new customer to our location. Due to the growth in customer we have been able to expand throughout Saudi Arabia and bring more people joy. Dispite, the fact that so many people come here regularly we make sure each time you get great food matched with amazing service. Finally, we provide many great deal on our food like the discounted price if you use our app you can find on any device.</h5>
   </body>
 </html>
